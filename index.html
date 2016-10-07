@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Neighborhood Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://use.fontawesome.com/04401316b2.js"></script>
+  </head>
+  <body>
+    <!--If the list is visible then the header is not and viceversa-->
+    <header data-bind="visible: headerIsVisible">
+      <button id="hamburger" data-bind="click: triggerListVisibility">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+    </header>
+    <div class="aside" data-bind="visible: locationsListIsVisible">
+      <div class="filter">
+        <input type="text" id="search-places-text" placeholder="Ex: Teatro" data-bind="value: filter">
+        <input type="button" id="search-places" value="Filter" data-bind="click: filterLocationsList">
+      </div>
+      <ul class="locations-list" data-bind="foreach: locationsList">
+        <li class="location-list-item" data-bind="text: title, visible: visibility, click: $parent.triggerClickOnLocationMarker"></li>
+      </ul>
+    </div>
+    <div id="map"></div>
+    <div class="attributions">
+      <p class="attributions-paragraph">This app makes use of GoogleMaps and Wikipedia APIs</p>
+    </div>
+    <script src="js/libraries/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    <script src="js/app.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVoVUTlcbwg4LTX9RRNDK6EQZtbQwEH4g&libraries=drawing,geometry,places&callback=initMap" onerror="googleError()">
+    </script>
+  </body>
+</html>
