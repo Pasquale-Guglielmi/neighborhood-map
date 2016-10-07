@@ -7,7 +7,7 @@ The project is also designed to make the student interact with API servers (Goog
 
 To run the app you can either:
  1.  clone or download this repository and load the *index.html* file in your browser
- 2. use this direct [link]()
+ 2. use this direct [link](https://pasquale-guglielmi.github.io/neighborhood-map/)
 
 ### How to use the app:
 
