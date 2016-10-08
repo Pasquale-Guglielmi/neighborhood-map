@@ -14,7 +14,7 @@ To run the app you can either:
 - The single-page app will load a series of locations that will be rendered both as map markers and a list on the left of the screen ( on mobiles, this list can be opened by clicking on the 'hamburger' button).
 - The user can click on both list items and map markers, triggering the opening of an infoWindow containing additional information about the related place.
 - If Wikipedia articles concerning the selected place will be available, links to these articles will be shown inside the infoWindow.
-- The locations-list on the left provides a filter option that uses an input field to filter both the list view and the map markers displayed by default on load.
+- The locations-list on the left provides a text input field where the user can types in to filter the list elements together with the related map markers, displayed by default on load.
 
 ### Resources:
 

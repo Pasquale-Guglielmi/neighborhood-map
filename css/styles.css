@@ -103,16 +103,15 @@ header {
 }
 
 #search-places {
-    background-color: #3965ac;
+    text-transform: capitalize;
+    width: 50px;
     border: none;
     color: white;
     float: right;
-    margin: 10px 10px 0 0;
-    padding: 16px;
+    margin: 0 15px 0 0;
+    padding: 0;
     text-align: center;
-    display: inline-block;
     font-size: 16px;
-    cursor: pointer;
 }
 
 .attributions {
